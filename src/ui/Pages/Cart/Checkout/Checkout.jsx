@@ -345,8 +345,8 @@ function CheckoutMain() {
               <label htmlFor="bank">Bank</label>
             </div>
             <div className="flex">
-              <img src="../img/visa.png" alt="Visa" />
-              <img src="../img/masterCard.png" alt="Master Card" />
+              <img src="img/visa.png" alt="Visa" />
+              <img src="img/masterCard.png" alt="Master Card" />
             </div>
           </div>
           <div>
@@ -375,10 +375,9 @@ function CheckoutMain() {
 }
 
 function CheckOutItems({ item }) {
-  const imgUrl = `../${item.imgUrl}`;
   return (
     <div className="flex justify-between w-[527px] items-center mt-[10px]">
-      <img className="w-[50px] h-[39px]" src={imgUrl} alt="" />
+      <img className="w-[50px] h-[39px]" src={item.imgUrl} alt="" />
       <span className="w-[250px] text-center">{item.name}</span>
       <span>{item.quantity} pcs</span>
       <span className="w-[60px] text-center">

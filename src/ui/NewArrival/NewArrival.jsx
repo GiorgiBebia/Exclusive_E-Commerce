@@ -9,7 +9,7 @@ export function NewArrival() {
         <div
           className="w-[570px] h-[600px] relative"
           style={{
-            backgroundImage: `url("../img/playstation5.png")`,
+            backgroundImage: `url("img/playstation5.png")`,
           }}
         >
           <h3 className="absolute text-white top-[446px] left-[32px] text-[24px] mx-auto">
