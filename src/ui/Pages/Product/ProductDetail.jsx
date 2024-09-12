@@ -48,7 +48,6 @@ export default ProductDetail;
 
 function ProductMain({ item }) {
   const dispatch = useDispatch();
-  const imgUrl = `../${item.imgUrl}`;
   const [itemQuantity, setItemQuantity] = useState(1);
   const [addToCart, setAddToCart] = useState(false);
 
@@ -77,7 +76,7 @@ function ProductMain({ item }) {
 
   return (
     <div className="max-w-[1170px] mt-[80px] ml-[135px] flex gap-[70px]">
-      <img className="w-[700px] h-[600px]" src={imgUrl} alt="" />
+      <img className="w-[700px] h-[600px]" src={item.imgUrl} alt="" />
       <div>
         <span className="text-[24px] font-semibold">{item.name}</span>
         <div className="flex gap-1 my-3">
