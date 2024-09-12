@@ -1,20 +1,17 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
-import { lazy } from "react";
 
-const AppLayout = lazy(() => import("./ui/AppLayout"));
-const SignUp = lazy(() => import("./ui/Pages/SignUp/SignUp"));
-const LogIn = lazy(() => import("./ui/Pages/LogIn/LogIn"));
-const About = lazy(() => import("./ui/Pages/About/About"));
-const Contact = lazy(() => import("./ui/Pages/Contact/Contact"));
-const NotFound = lazy(() => import("./ui/Pages/NotFound/NotFound"));
-const Wishlist = lazy(() => import("./ui/Pages/Wishlist/Wishlist"));
-const Cart = lazy(() => import("./ui/Pages/Cart/Cart"));
-const Checkout = lazy(() => import("./ui/Pages/Cart/Checkout/Checkout"));
-const Account = lazy(() => import("./ui/Pages/Account/Account"));
-const OrderConfirmation = lazy(() =>
-  import("./ui/Pages/OrderConfirmation/OrderConfirmation")
-);
-const ProductDetail = lazy(() => import("./ui/Pages/Product/ProductDetail"));
+import AppLayout from "./ui/AppLayout";
+import SignUp from "./ui/Pages/SignUp/SignUp";
+import LogIn from "./ui/Pages/LogIn/LogIn";
+import About from "./ui/Pages/About/About";
+import Contact from "./ui/Pages/Contact/Contact";
+import NotFound from "./ui/Pages/NotFound/NotFound";
+import Wishlist from "./ui/Pages/Wishlist/Wishlist";
+import Cart from "./ui/Pages/Cart/Cart";
+import Checkout from "./ui/Pages/Cart/Checkout/Checkout";
+import Account from "./ui/Pages/Account/Account";
+import OrderConfirmation from "./ui/Pages/OrderConfirmation/OrderConfirmation";
+import ProductDetail from "./ui/Pages/Product/ProductDetail";
 
 function App() {
   return (
